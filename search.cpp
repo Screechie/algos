@@ -67,3 +67,15 @@ int main()
 
     return 0;
 }
+
+/*Linearsearch function definition
+	N.B function assumes no duplicates are in the data set
+*/
+int linearSearch(auto data, auto key) {
+	for(int i = 0; i < data.size(); i++)
+		if(key == data[i])
+			return i;
+			
+		return -1;//Key was not found	
+
+}
